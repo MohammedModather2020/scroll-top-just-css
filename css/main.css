@@ -1,0 +1,80 @@
+/* 
+* Challenge Name    : عمل Scroll To Top بواسطة CSS فقط
+* Start Date        : 28-11-2021
+* End Date          : 28-11-2021
+* Contact Us        : mohammedmodather144@gmail.com
+* Git Hub url       : https://github.com/MohammedModather2020
+*/
+/* 
+* 1- General Style
+   1.0- universal element
+   1.1- Root Element
+   1.2- Body Style
+* 2- Section Style
+   2.0- Container box
+   2.1- Scroll to top
+* 3- Common Style 
+   3.0- Font Family
+   3.1- Button general
+   3.2- Button Primary
+*/
+/* 1- General Style */
+/*  1.0- universal element */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+/* 1.1- Root Element */
+@media (prefers-reduced-motion: no-preference) {
+  html {
+    scroll-behavior: smooth;
+  }
+}
+/* 1.2- Body Style */
+body{
+  font-family: 'DroidKufi-Regular', sans-serif;
+  background-color: #EEEEEE;
+}
+/* 2- Section Style */
+/*  2.0- Container box */
+.container .box{
+  height: 300px;
+  border: 1px dotted #ccc;
+  margin: .5rem;
+  padding: .5rem;
+}
+/* 2.1- Scroll to top */
+#scroll-top{
+  position: fixed;
+  bottom: 1rem;
+  right: 1rem;
+}
+#scroll-top a.btn{
+  pointer-events: all;
+  text-decoration: unset;
+  transition: transform 3s ease-in;
+  
+}
+/* 3- Common Style  */
+/*  3.0- Font Family */
+@font-face{
+  src: url(../assets/fonts/DroidKufi-Regular.ttf);
+  font-family: 'DroidKufi-Regular';
+}
+/* 3.1- Button general */
+.btn{
+  font-family: 'DroidKufi-Regular' !important;
+  border: 0;
+  background-color: #F6F6F6;
+  padding: .2rem .5rem;
+  font-size: .9rem;
+  font-weight: bolder;
+  border-radius: .3rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* 3.2- Button Primary */
+.btn-primary{
+  background-color: #3B74BA;
+  color: #FFFFFF;
+}
